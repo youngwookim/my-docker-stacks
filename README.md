@@ -9,7 +9,7 @@ $ docker build --rm -t youngwookim/my-datascience-notebook .
 ```
 
 ```
-docker run --rm --user root -p 8888:8888 -e GRANT_SUDO=yes -e JUPYTER_ENABLE_LAB=yes -v "$PWD":/home/jovyan/work youngwookim/my-datascience-notebook:latest
+docker run --rm --user root -p 8888:8888 -e GRANT_SUDO=yes -e JUPYTER_ENABLE_LAB=yes -v "$PWD":/home/jovyan youngwookim/my-datascience-notebook:latest
 
 ```
 
@@ -24,6 +24,6 @@ $ docker build --rm -t youngwookim/my-spark-notebook .
 ```
 
 ```
-docker run --rm --user root -p 8888:8888 -e GRANT_SUDO=yes -e JUPYTER_ENABLE_LAB=yes -v "$PWD":/home/jovyan/work youngwookim/my-spark-notebook:latest
+docker run --rm --user root -p 8888:8888 -e GRANT_SUDO=yes -e JUPYTER_ENABLE_LAB=yes -v "$PWD":/home/jovyan youngwookim/my-spark-notebook:latest
 
 ```
