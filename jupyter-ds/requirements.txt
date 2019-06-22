@@ -1,3 +1,5 @@
 chartify
 boto3
 minio
+pymysql
+
